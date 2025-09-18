@@ -1,0 +1,43 @@
+html {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: '#333333';
+}
+
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: 'transparent';  /* Optional: just make scrollbar invisible */
+}
+@font-face {
+    font-family: "Nexa Bold Regular";
+    src: url("./fonts/Nexa-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("./fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+#dashboardTitle{
+    font-family: "Poppins";
+    font-weight: 700;
+    padding: 2em 0 1em 0;
+}
+
+@media screen and (max-width: 900px){
+    #wrapperBackground{
+        background: #f4f4f4;
+    }
+}
+
+@media screen and (min-width: 901px){
+    #wrapperBackground{
+        background: #f4f4f4;
+    }
+}
