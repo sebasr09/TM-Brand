@@ -1,44 +1,12 @@
-# FM-Dashboard
+# React + Vite
 
-This project contains the dashboard for FM products management.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This project uses WebSockets for KYC requests. It manages the request and it state (Still working, ended). The WebSocket ID is persisted and used by the step functions to notify the end of the process. This was done because KYC request can take several minutes in complete.
+Currently, two official plugins are available:
 
-## Prerequisites
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-To properly run the project you must have the following installed in you machine:
+## Expanding the ESLint configuration
 
-- Nodejs & npm
-- <a href="https://docs.amplify.aws/start/getting-started/setup/q/integration/react#initialize-a-new-backend">AWS Amplify</a>
-
-## Installation
-
-Before running the project you must install the dependencies of the project using
-
-```bash
-npm i
-```
-
-## Run the project
-
-To start the project you must be in the root folder of the project and execute
-
-```bash
-npm start
-```
-
-## Deploy
-
-The dev and prod environments are auto deployed when a new commit is made to each branch. In the case you want to do the manaul deployment to _DEV_ environment you must use <a href="https://docs.amplify.aws/start/getting-started/setup/q/integration/react#initialize-a-new-backend">AWS Amplify</a> as follows. The config for this specific project must be like this:
-
-![AmplifyInit](./screenshots/AmplifyInit.png 'AmplifyInit')
-
-Then to deploy the project with its infrastructure run the following code:
-
-```bash
-amplify push
-```
-
-## References
-
-[1] Amplify Tutorial (https://docs.amplify.aws/start/getting-started/setup/q/integration/react#initialize-a-new-backend)
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
